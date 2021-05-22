@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_position"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/current_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:textSize="48dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/retry_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ressayer"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#d63031" />
+
+        <Button
+            android:id="@+id/show_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/position_exacte"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="#00b894"/>
+
+    </LinearLayout>
+
+</LinearLayout>
