@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         mRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Localisation...", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(MainActivity.this, "Localisation...", Toast.LENGTH_SHORT).show();
+                Intent carteActivity=new Intent( MainActivity.this , Carte.class);
+                startActivity(carteActivity);
             }
         });
     }
